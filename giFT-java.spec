@@ -5,7 +5,7 @@ Version:	0.1.1
 Release:	1
 License:	GPL
 Group:		Applications/Networking
-Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/gift/%{name}.%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/gift/%{name}.%{version}.tar.gz
 URL:		http://giFT.sourceforge.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -25,7 +25,6 @@ rm -rf $RPM_BUILD_ROOT
 
 install -d $RPM_BUILD_ROOT%{_javalibdir}
 install *.jar $RPM_BUILD_ROOT%{_javalibdir}
-
 
 %clean
 rm -rf $RPM_BUILD_ROOT
