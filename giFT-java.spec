@@ -10,7 +10,7 @@ Source0:	http://dl.sourceforge.net/gift/%{name}.%{version}.tar.gz
 URL:		http://giFT.sourceforge.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_javalibdir	/usr/share/java
+%define		_javalibdir	%{_datadir}/java
 
 %description
 The generic interface to FastTrack.
