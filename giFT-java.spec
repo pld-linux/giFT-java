@@ -1,30 +1,32 @@
 Summary:	The generic interface to FastTrack
+Summary(pl):	Zwyk³y interfejs do FastTracka
 Name:		giFT-java
 Version:	0.1.1
 Release:	1
 License:	GPL
-Group:		Applications/Java
-Group(de):	Applikationen/Java
-Group(pl):	Aplikacje/Java
-Source0:	%{name}.%{version}.tar.gz
-URL:		http://giFT.sourceforge.net
+Group:		Applications/Networking
+Group(de):	Applikationen/Netzwerkwesen
+Group(pl):	Aplikacje/Sieciowe
+Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/gift/%{name}.%{version}.tar.gz
+URL:		http://giFT.sourceforge.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_javalibdir	/usr/share/java
 
 %description
-The generic interface to FastTrack
+The generic interface to FastTrack.
+
+%description -l pl
+Zwyk³y interfejs do FastTracka.
 
 %prep
 %setup -q -n %{name}
 
-%build
-
 %install
 rm -rf $RPM_BUILD_ROOT
 
-install -d $RPM_BUILD_ROOT/%{_javalibdir}
-cp *.jar $RPM_BUILD_ROOT/%{_javalibdir}
+install -d $RPM_BUILD_ROOT%{_javalibdir}
+install *.jar $RPM_BUILD_ROOT%{_javalibdir}
 
 gzip -9nf README LICENSE *.html
 
