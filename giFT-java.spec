@@ -5,8 +5,6 @@ Version:	0.1.1
 Release:	1
 License:	GPL
 Group:		Applications/Networking
-Group(de):	Applikationen/Netzwerkwesen
-Group(pl):	Aplikacje/Sieciowe
 Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/gift/%{name}.%{version}.tar.gz
 URL:		http://giFT.sourceforge.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
