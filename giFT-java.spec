@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Networking
 Source0:	http://dl.sourceforge.net/gift/%{name}.%{version}.tar.gz
+# Source0-md5:	839d53641dae29cdaeddb31a1a65e79c
 URL:		http://giFT.sourceforge.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
