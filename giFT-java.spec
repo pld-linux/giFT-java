@@ -23,8 +23,8 @@ Zwyk³y interfejs do FastTracka.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT%{_javalibdir}
+
 install *.jar $RPM_BUILD_ROOT%{_javalibdir}
 
 %clean
@@ -32,5 +32,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README LICENSE *.html
+%doc README *.html
 %{_javalibdir}/*.jar
