@@ -26,12 +26,11 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_javalibdir}
 install *.jar $RPM_BUILD_ROOT%{_javalibdir}
 
-gzip -9nf README LICENSE *.html
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README LICENSE *.html
 %{_javalibdir}/*.jar
