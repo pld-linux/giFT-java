@@ -1,5 +1,5 @@
 Summary:	The generic interface to FastTrack
-Summary(pl):	Zwyk≥y interfejs do FastTracka
+Summary(pl.UTF-8):   Zwyk≈Çy interfejs do FastTracka
 Name:		giFT-java
 Version:	0.1.1
 Release:	1
@@ -15,8 +15,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 The generic interface to FastTrack.
 
-%description -l pl
-Zwyk≥y interfejs do FastTracka.
+%description -l pl.UTF-8
+Zwyk≈Çy interfejs do FastTracka.
 
 %prep
 %setup -q -n %{name}
