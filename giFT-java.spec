@@ -1,5 +1,5 @@
 Summary:	The generic interface to FastTrack
-Summary(pl.UTF-8):   Zwykły interfejs do FastTracka
+Summary(pl.UTF-8):	Zwykły interfejs do FastTracka
 Name:		giFT-java
 Version:	0.1.1
 Release:	1
